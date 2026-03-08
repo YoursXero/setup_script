@@ -103,16 +103,6 @@ for target_dir in "${!REPOS[@]}"; do
     clone_repo "$target_dir" "${REPOS[$target_dir]}"
 done
 
-# KernelSU patch
-echo "Applying KernelSU patch..."
-cd kernel/nothing/sm8475 || exit 1
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v2.0.0
-cd - >/dev/null
-echo ""
-echo ""
-echo " ✅ KernelSU patch applied."
-echo ""
-
 # setup done
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
