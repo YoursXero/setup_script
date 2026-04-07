@@ -103,6 +103,16 @@ for target_dir in "${!REPOS[@]}"; do
     clone_repo "$target_dir" "${REPOS[$target_dir]}"
 done
 
+# lfs files
+echo "Update lfs files..."
+cd vendor/nothing/Pong
+git lfs fetch --all && git lfs checkout
+cd - >/dev/null
+echo ""
+echo ""
+echo " ✅ LFS update done."
+echo ""
+
 # setup done
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
