@@ -52,7 +52,7 @@ declare -A REPOS=(
     ["hardware/qcom-caf/sm8450/display"]="https://github.com/Pong-Development/hardware_qcom-caf_sm8450_display.git"
     ["packages/apps/ParanoidGlyphPhone2"]="https://github.com/Pong-Development/packages_apps_ParanoidGlyph.git"
     ["packages/apps/GlyphAdapter"]="https://github.com/Pong-Development/packages_apps_GlyphAdapter.git"
-    ["hardware/dolby"]="https://github.com/Pong-Development/hardware_dolby.git"
+    ["hardware/dolby"]="https://github.com/YoursXero/hardware_dolby.git"
 )
 
 # Function to clone a repository with error handling
